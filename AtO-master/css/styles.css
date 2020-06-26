@@ -1,0 +1,23 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 28 | /     @include mq($lg){
+ * 29 | |     max-width: 1400px;
+ * 30 | |     display: block;
+ * 31 | |     margin-left: auto;
+ * 32 | |     margin-right: auto;
+ * 33 | \     }
+ *    '
+ *   scss\base\_normalize.scss 28:5  @import
+ *   scss\base\_index.scss 1:9       @import
+ *   scss\styles.scss 4:9            root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 28 \2502  \250c      @include mq($lg){\a 29 \2502  \2502      max-width: 1400px;\a 30 \2502  \2502      display: block;\a 31 \2502  \2502      margin-left: auto;\a 32 \2502  \2502      margin-right: auto;\a 33 \2502  \2514      }\a    \2575 \a   scss\\base\\_normalize.scss 28:5  @import\a   scss\\base\\_index.scss 1:9       @import\a   scss\\styles.scss 4:9            root stylesheet";
+}
